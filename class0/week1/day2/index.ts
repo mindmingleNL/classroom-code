@@ -47,7 +47,8 @@ const swen: Person = {
       kind: "Cat"
     },
     {
-      name: "Snoopy"
+      name: "Snoopy",
+      kind: "dog"
     }
   ]
 };
@@ -68,3 +69,5 @@ const swen: Person = {
 //     hasPet: true
 //   }
 // ];
+
+const theOldFarm = 5;
