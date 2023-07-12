@@ -170,7 +170,6 @@ console.log(greeting);
 
 /**
  * BONUS FARM EXERCISES 👨🏻‍🌾
- * It has
  */
 
 const greenVegetables = ["🥬", "🥦", "🥒"];
