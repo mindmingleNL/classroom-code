@@ -171,7 +171,6 @@ console.log(greeting);
 /**
  * BONUS FARM EXERCISES 👨🏻‍🌾
  */
-
 const greenVegetables = ["🥬", "🥦", "🥒"];
 const myFarmPantry = ["🌶️", "🥕", "🥬", "🥦", "🥒", "🍅", "🌽"];
 
