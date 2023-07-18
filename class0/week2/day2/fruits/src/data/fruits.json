@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Apple",
+    "isOrganic": false,
+    "price": 1.99,
+    "taste": "Sour"
+  },
+  {
+    "name": "Banana",
+    "isOrganic": true,
+    "price": 0.49,
+    "taste": "Sweet"
+  },
+  {
+    "name": "Lemon",
+    "isOrganic": true,
+    "price": 0.79,
+    "taste": "Sour"
+  },
+  {
+    "name": "Strawberry",
+    "isOrganic": true,
+    "price": 3.49,
+    "taste": "Sweet"
+  },
+  {
+    "name": "Watermelon",
+    "isOrganic": true,
+    "price": 4.99,
+    "taste": "Sweet"
+  },
+  {
+    "name": "Grapefruit",
+    "isOrganic": true,
+    "price": 1.29,
+    "taste": "Bitter"
+  },
+  {
+    "name": "Cranberries",
+    "isOrganic": true,
+    "price": 2.99,
+    "taste": "Bitter"
+  },
+  {
+    "name": "A new exotic fruit",
+    "isOrganic": false,
+    "price": 12.99,
+    "taste": "Sweet"
+  }
+]
