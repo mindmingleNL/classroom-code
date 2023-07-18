@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung Jet 75 Pro",
+    "reviews": 350,
+    "type": "Stick vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 599,
+    "sale_price": 379,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 12 Coolblue stores"
+  },
+  {
+    "id": 2,
+    "name": "Bosch Series 8 In'genius ProSilence BGL8SIL5",
+    "reviews": 236,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": ["hard floors", "Low-pile carpet", "Wood floors"],
+    "retail_price": 279,
+    "sale_price": 229,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 7 Coolblue stores"
+  },
+  {
+    "id": 3,
+    "name": "Dyson V12 Detect Slim Absolute",
+    "reviews": 244,
+    "type": "Stick vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 699,
+    "sale_price": 579,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 13 Coolblue stores"
+  },
+  {
+    "id": 4,
+    "name": "AEG AB61A4DB 6000 Animal",
+    "reviews": 108,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 244.95,
+    "sale_price": 189,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 7 Coolblue stores"
+  },
+  {
+    "id": 6,
+    "name": "Bosch Series 8 In'genius ProSilence BGL8SIL5",
+    "reviews": 236,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": ["hard floors", "Low-pile carpet", "Wood floors"],
+    "retail_price": 279,
+    "sale_price": 229,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 7 Coolblue stores"
+  },
+  {
+    "id": 7,
+    "name": "Dyson V12 Detect Slim Absolute",
+    "reviews": 244,
+    "type": "Stick vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 699,
+    "sale_price": 579,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 13 Coolblue stores"
+  },
+  {
+    "id": 8,
+    "name": "AEG AB61A4DB 6000 Animal",
+    "reviews": 108,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 244.95,
+    "sale_price": 189,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 7 Coolblue stores"
+  },
+  {
+    "id": 9,
+    "name": "Bosch Unlimited 8 BCS82BL24",
+    "reviews": 98,
+    "type": "Stick vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 599,
+    "sale_price": 519,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 4 Coolblue stores"
+  },
+  {
+    "id": 9,
+    "name": "Samsung Jet 90 Multi",
+    "reviews": 33,
+    "type": "Stick vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 449,
+    "sale_price": 100,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 10 Coolblue stores"
+  },
+  {
+    "id": 10,
+    "name": "Bosch Series 4 ProPower BGLS4POW2",
+    "reviews": 174,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": [
+      "hard floors",
+      "High-pile carpet",
+      "Low-pile carpet",
+      "Wood floors"
+    ],
+    "retail_price": 169.99,
+    "sale_price": 139,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 1 Coolblue store"
+  },
+  {
+    "id": 11,
+    "name": "Miele Complete C3 Active Parquet PowerLine Lotus White",
+    "reviews": 67,
+    "type": "Bagged vacuum, Canister vacuum",
+    "suction_power": "very good",
+    "floor_type": ["hard floors", "Low-pile carpet", "Wood floors"],
+    "retail_price": 319,
+    "sale_price": 300,
+    "availability": "Delivered tomorrow",
+    "pickup": "Available for pickup even sooner in 2 Coolblue stores"
+  }
+]

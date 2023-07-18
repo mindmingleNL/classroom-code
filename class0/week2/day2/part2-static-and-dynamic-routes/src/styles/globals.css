@@ -1,0 +1,140 @@
+/* CSS Box Shadow Magic!
+ * I have no clue how this works! 
+ * It is generated with: 
+ * https://www.joshwcomeau.com/shadow-palette/ 
+*/
+:root {
+  --shadow-color: 40deg 32% 59%;
+  --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+body {
+  font-family: sans-serif;
+  background: #fef6e4;
+}
+
+.page-home {
+  min-height: 100vh;
+  padding: 25px;
+  margin-bottom: 200px;
+}
+
+.page-home .img-banner {
+  /* Center Image Horizontally */
+  /* https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto */
+  margin: 0 auto;
+  border: 5px solid #f582ae;
+}
+
+.page-home h1 {
+  /* Horizontally center text */
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: #f582ae 2px 2px;
+}
+
+.page-home h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #f582ae;
+  text-shadow: black 1px 1px;
+  text-transform: uppercase;
+}
+
+.vacuum-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.vacuum-link-container {
+  background-color: #f3d2c1;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 👇 Adds a smooth transition to the background color when it changes (on hover) of 0.5 seconds */
+  transition: background-color 0.5s ease;
+}
+
+.vacuum-link-container:hover {
+  background-color: #f582ae;
+  cursor: pointer;
+}
+
+.vacuum-list li.vacuum-link {
+  width: 50%;
+  padding: 10px;
+}
+
+.vacuum-list li.vacuum-link a {
+  border-radius: 10px;
+  color: #001858;
+  height: 100%;
+}
+
+.vacuum-list li.vacuum-link .vacuum-link-price {
+  display: flex;
+  align-items: center;
+}
+
+.vacuum-list li.vacuum-link img.dollar-sign {
+  border: 3px solid #ffcba8;
+  border-radius: 1000px;
+  margin-right: 10px;
+}
+
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.back-button {
+  display: block;
+}
+
+/* CSS Box Shadow Magic:
+ * https://www.joshwcomeau.com/shadow-palette/ 
+*/
+.box-shadow {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.vacuum-card {
+  margin-top: 10px;
+  padding: 25px 75px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.vacuum-card .vacuum-price img {
+  margin-right: 10px;
+}
+
+.vacuum-card .vacuum-price {
+  display: flex;
+}
+
+.vacuum-card img.dollar-sign {
+  border: 3px solid #ffcba8;
+  border-radius: 1000px;
+}
