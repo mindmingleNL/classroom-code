@@ -14,9 +14,9 @@ const Mood = (props: MoodProps) => {
   // - Every useEffect runs once in the beginning of time
   const [getMood, setMood] = useState<boolean>(props.startAs);
 
-  // useEffect(() => {
-  //   console.log("Something happened!");
-  // }, []);
+  useEffect(() => {
+    console.log("Yummy!");
+  }, [getMood]);
 
   const handleHappy = () => {
     // mood = true

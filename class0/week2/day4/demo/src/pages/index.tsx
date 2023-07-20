@@ -12,9 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Hello world!</h1>
+
       <Farm />
-      <Mood startAs={true} />
-      <Mood startAs={false} />
+      {/* <Mood startAs={true} />
+      <Mood startAs={false} /> */}
     </>
   );
 }

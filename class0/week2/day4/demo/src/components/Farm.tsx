@@ -10,7 +10,7 @@ import axios from "axios";
 //     "imgUrl": "https://i.giphy.com/media/h55EUEsTG9224/giphy.webp"
 //   },
 
-interface Animal {
+export interface Animal {
   id: number;
   name: string;
   kind: "cow" | "chicken" | "sheep" | "pig";
@@ -56,8 +56,10 @@ const Farm = () => {
         getAnimals.map((animal) => {
           return (
             <div key={animal.id}>
-              <p>{animal.name}</p>
-              <img src={animal.imgUrl} alt="A cute animal" />
+              <p>
+                {animal.id}:{animal.name}
+              </p>
+              <a href={`/animals/${animal.id}`}>Show Details</a>
             </div>
           );
         })
