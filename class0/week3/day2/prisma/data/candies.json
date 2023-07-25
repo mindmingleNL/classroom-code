@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Lolipop",
+    "taste": "Sweet"
+  },
+  {
+    "id": 2,
+    "name": "Toffee",
+    "taste": "Sweet"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate",
+    "taste": "Sweet"
+  },
+  {
+    "id": 4,
+    "name": "Ice Cream",
+    "taste": "Cold"
+  },
+  {
+    "id": 5,
+    "name": "Jawbreaker",
+    "taste": "Sour"
+  }
+]
