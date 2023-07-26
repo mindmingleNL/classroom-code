@@ -45,8 +45,14 @@ const port = 3001;
  */
 app.get("/animals", async (req, res) => {
   /** We want to get all the data from our db */
-  const animals = await prisma.animal.findMany();
-  res.send(animals);
+  try {
+    const animals = await prisma.animal.findMany();
+    res.send(animals);
+  } catch (err) {
+    console.log("Something went wrong.");
+    /** Respond with an error if something went wrong */
+    res.status(500).send("Something went wrong.");
+  }
 });
 
 /**
@@ -63,17 +69,23 @@ app.get("/animals/:id", async (req, res) => {
     });
   } else {
     // It is valid, hooray!
-    // Find the animal in the database with prisma
-    const animalFromDatabase = await prisma.animal.findUnique({
-      where: {
-        id: animalId
-      }
-    });
+    try {
+      // Find the animal in the database with prisma
+      const animalFromDatabase = await prisma.animal.findUnique({
+        where: {
+          id: animalId
+        }
+      });
 
-    if (animalFromDatabase === null) {
-      res.status(404).send(`Can't find animal with id ${animalId}`);
-    } else {
-      res.send(animalFromDatabase);
+      if (animalFromDatabase === null) {
+        res.status(404).send(`Can't find animal with id ${animalId}`);
+      } else {
+        res.send(animalFromDatabase);
+      }
+    } catch (err) {
+      console.log("Something went wrong.");
+      /** Respond with an error if something went wrong */
+      res.status(500).send("Something went wrong.");
     }
   }
 });
