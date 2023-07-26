@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Eggciting Acres",
+    "location": "Sunny Side Up, California"
+  },
+  {
+    "id": 2,
+    "name": "Moo-ving Meadows",
+    "location": "Cow-abunga, Texas"
+  },
+  {
+    "id": 3,
+    "name": "Clucking Fields",
+    "location": "Hen-sylvania, Pennsylvania"
+  }
+]
