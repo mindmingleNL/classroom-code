@@ -1,8 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
 import { toData } from "./jwt";
 
+export interface AuthRequest extends Request {
+  userId?: number;
+}
+
 export const AuthMiddleware = async (
-  req: Request,
+  req: AuthRequest,
   res: Response,
   next: NextFunction
 ) => {
@@ -19,6 +23,7 @@ export const AuthMiddleware = async (
     try {
       // Verify the token, this will throw an error if it isn't
       const data = toData(token);
+      req.userId = data.userId;
       // If we reach this point the token was correct!
       // If successful, we call the actual route
       next();

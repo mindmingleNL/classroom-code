@@ -1,7 +1,7 @@
 import express, { json } from "express";
 import { PrismaClient } from "@prisma/client";
 import { toToken, toData } from "./auth/jwt";
-import { AuthMiddleware } from "./auth/middleware";
+import { AuthMiddleware, AuthRequest } from "./auth/middleware";
 const app = express();
 const port = 3001;
 app.use(json());
@@ -28,6 +28,32 @@ app.get("/post", async (req, res) => {
     res.send(allPosts);
   } catch (error) {
     res.status(500).send({ message: "Something went wrong" });
+  }
+});
+
+app.post("/posts", AuthMiddleware, async (req: AuthRequest, res) => {
+  const requestBody = req.body;
+  const userIdThatMadeTheRequest = req.userId;
+
+  if (!userIdThatMadeTheRequest) {
+    res.status(500).send({ message: "Something went wrong!" });
+    return;
+  }
+
+  if ("message" in requestBody) {
+    try {
+      const newPost = await prisma.post.create({
+        data: {
+          userId: userIdThatMadeTheRequest,
+          message: requestBody.message,
+        },
+      });
+      res.status(201).send(newPost);
+    } catch (error) {
+      res.status(500).send({ message: "Something went wrong!" });
+    }
+  } else {
+    res.status(400).send({ message: "'message' and 'userId' are required" });
   }
 });
 
