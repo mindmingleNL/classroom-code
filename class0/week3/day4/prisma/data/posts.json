@@ -1,0 +1,18 @@
+[
+  {
+    "message": "Auth is so fun!",
+    "userId": 1
+  },
+  {
+    "message": "I regret everything",
+    "userId": 1
+  },
+  {
+    "message": "Hello, world!",
+    "userId": 2
+  },
+  {
+    "message": "I wish Alice would leave this website",
+    "userId": 3
+  }
+]
