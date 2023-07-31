@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Breakfast Burritos",
+    "category": [1],
+    "img_url": null,
+    "instructions": "Cook your preferred meat and vegetables. Scramble eggs and mix with the cooked meat and vegetables. Warm up tortillas and fill them with the mixture. Fold and serve warm.",
+    "ingredients": "Tortillas, eggs, meat, vegetables",
+    "prep_time": 30,
+    "serves": 4
+  },
+  {
+    "id": 2,
+    "name": "Overnight Oats",
+    "category": [1],
+    "img_url": null,
+    "instructions": "Mix oats with milk and yogurt. Add sweetener if desired. Leave in the fridge overnight. Serve with your favorite toppings.",
+    "ingredients": "Oats, milk, yogurt, sweetener, toppings",
+    "prep_time": 5,
+    "serves": 2
+  },
+  {
+    "id": 3,
+    "name": "Avocado Toast",
+    "category": [1, 2],
+    "img_url": null,
+    "instructions": "Mash avocado and spread on toasted bread. Sprinkle with salt, pepper, and other desired seasonings. Serve immediately.",
+    "ingredients": "Bread, avocado, salt, pepper",
+    "prep_time": 10,
+    "serves": 2
+  },
+  {
+    "id": 4,
+    "name": "Shakshouka",
+    "category": [1, 2, 3],
+    "img_url": null,
+    "instructions": "Saute onions and peppers. Add tomatoes and spices, and simmer. Make wells in the sauce and crack eggs into them. Cover and cook until eggs are done.",
+    "ingredients": "Onions, peppers, tomatoes, eggs, spices",
+    "prep_time": 40,
+    "serves": 4
+  },
+  {
+    "id": 5,
+    "name": "American Pancakes",
+    "category": [1],
+    "img_url": null,
+    "instructions": "Mix flour, baking powder, and sugar. In another bowl, whisk eggs, milk, and melted butter. Combine both mixtures. Cook on a hot griddle until golden brown.",
+    "ingredients": "Flour, baking powder, sugar, eggs, milk, butter",
+    "prep_time": 20,
+    "serves": 4
+  }
+]
