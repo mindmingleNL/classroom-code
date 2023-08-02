@@ -1,0 +1,148 @@
+:root {
+  --background: #f5f3ef;
+  --orange: #febd2f;
+  --black: #0d0d0d;
+  --box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.1);
+  --border: #a1aaa6;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../fonts/YoungSerif-Regular.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--black);
+  font-family: "YoungSerif";
+}
+
+h1 {
+  font-size: 76px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage-hero {
+  height: 50vw;
+  background-image: url("/bg-homepage-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.homepage-hero-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  background-color: var(--orange);
+}
+
+.navigation-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navgation-rounded {
+  border-radius: 0px 0px 50px 50px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "YoungSerif";
+}
+
+.navigation-button {
+  color: var(--black);
+  font-family: "YoungSerif";
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+.navigation-button-white {
+  margin-left: 50px;
+  border-radius: 300px;
+  background: #fff;
+  color: var(--black);
+  font-family: "YoungSerif";
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navigation-button:hover,
+.navigation-button-white:hover {
+  text-decoration: underline;
+}
+
+/* OUR CSS FROM THE LECTURE */
+
+.homepage-navigation-bar {
+  display: flex;
+  height: 250px;
+}
+
+.homepage-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 30px;
+
+  /* Maximum width */
+  max-width: 1280px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage-heading-recipes {
+  grid-column: span 2;
+}
+
+.homepage-search-bar {
+  grid-column: span 8;
+}
+
+.homepage-categories-filter {
+  grid-column: span 2;
+}
+
+.homepage-recipes {
+  grid-column: span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+}
+
+.homepage-recipe-item {
+  grid-column: span 4;
+  background-color: white;
+  border: 1px solid var(--border);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+}
