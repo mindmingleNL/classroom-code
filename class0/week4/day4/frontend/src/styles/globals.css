@@ -1,0 +1,15 @@
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+}
+
+.error-text {
+  color: red;
+}
