@@ -1,18 +1,39 @@
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import ErrorMessage from "@/components/ErrorMessage";
 
-interface DataFromPizzaForm {
-  message: string;
-  crust: "Vegan" | "Sourdough" | "Hot dog crust" | "Cheese crust";
-  toppings: "Salami" | "Olives" | "Hot dog" | "Pineapple";
-  chiliOil: boolean;
-}
+const pizzaFormValidator = z.object({
+  crust: z.union([
+    z.literal("Vegan"),
+    z.literal("Sourdough"),
+    z.literal("Hot dog crust"),
+    z.literal("Cheese crust"),
+  ]),
+  message: z.string().min(10).includes("👍"),
+  toppings: z.union([
+    z.literal("Salami"),
+    z.literal("Olives"),
+    z.literal("Hot dog"),
+    z.literal("Pineapple"),
+  ]),
+  chiliOil: z.boolean(),
+});
+
+type DataFromPizzaForm = z.infer<typeof pizzaFormValidator>;
 
 export default function Home() {
   const handlePizzaFormSubmit = (data: DataFromPizzaForm) => {
     console.log(data);
   };
 
-  const { register, handleSubmit } = useForm<DataFromPizzaForm>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }, // Get formState.errors and make it available
+  } = useForm<DataFromPizzaForm>({
+    resolver: zodResolver(pizzaFormValidator),
+  });
 
   return (
     <>
@@ -27,6 +48,7 @@ export default function Home() {
             <option>Cheese crust</option>
             <option>bal</option>
           </select>
+          {errors.crust && <ErrorMessage message={errors.crust.message} />}
 
           <label htmlFor="toppings">Choose your toppings</label>
           <select id="toppings" {...register("toppings")}>
@@ -35,6 +57,9 @@ export default function Home() {
             <option>Hot dog</option>
             <option>Pineapple</option>
           </select>
+          {errors.toppings && (
+            <ErrorMessage message={errors.toppings.message} />
+          )}
 
           <label htmlFor="chili-oil">Chili Oil?</label>
           <input
@@ -42,13 +67,13 @@ export default function Home() {
             id="chili-oil"
             {...register("chiliOil")}
           ></input>
+          {errors.chiliOil && (
+            <ErrorMessage message={errors.chiliOil.message} />
+          )}
 
           <label htmlFor="message">Any message?</label>
-          <input
-            type="text"
-            id="message"
-            {...(register("message"), { required: true })}
-          ></input>
+          <input type="text" id="message" {...register("message")}></input>
+          {errors.message && <ErrorMessage message={errors.message.message} />}
 
           <button type="submit">Order Pizza!</button>
         </form>
