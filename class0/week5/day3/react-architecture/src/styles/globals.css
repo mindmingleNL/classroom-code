@@ -3,6 +3,17 @@
   margin: 1rem;
 }
 
+.important-article {
+  border: 1px solid black;
+  margin: 1rem;
+  background-color: red;
+}
+.old-article {
+  border: 1px solid black;
+  margin: 1rem;
+  background-color: yellow;
+}
+
 .exercise {
   background-color: lightgreen;
   border: 1px solid darkgreen;
