@@ -1,0 +1,15 @@
+.article {
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.exercise {
+  background-color: lightgreen;
+  border: 1px solid darkgreen;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.exercise h1 {
+  color: darkgreen;
+}
