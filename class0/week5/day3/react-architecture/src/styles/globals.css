@@ -24,3 +24,50 @@
 .exercise h1 {
   color: darkgreen;
 }
+
+.navbar {
+  display: flex;
+  gap: 4rem;
+  background-color: #eee;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    display: flex;
+    gap: 4rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+}
+
+.dark {
+  /* color: white;
+  background-color: black; */
+}
+
+.light {
+  /* color: black;
+  background-color: white; */
+}
+
+.light a {
+  color: black;
+}
+
+.dark a {
+  color: white;
+}
+
+.main-dark {
+  background-color: black;
+  color: white;
+}
+
+.main-light {
+  background-color: white;
+  color: black;
+}

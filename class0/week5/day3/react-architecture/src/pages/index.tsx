@@ -2,7 +2,7 @@ import Article from "@/components/Article";
 import CustomButton from "@/components/CustomButton";
 import Exercise from "@/components/Exercise";
 import ExerciseList from "@/components/ExerciseList";
-
+import BaseLayout from "@/components/BaseLayout";
 import WithSayHi from "@/components/WithSayHi";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ export default function Home() {
   const [mood, setMood] = useState<string>("😁");
   const handleCustomClick = () => console.log("Moooeeee🐄");
   return (
-    <>
+    <BaseLayout>
       <h1>Hello, React Architecture!</h1>
       <p>{mood}</p>
       <CustomButton
@@ -38,6 +38,6 @@ export default function Home() {
 
         <ExerciseList />
       </div>
-    </>
+    </BaseLayout>
   );
 }

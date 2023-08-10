@@ -1,12 +1,10 @@
 import WithSayHi from "@/components/WithSayHi";
-
+import BaseLayout from "@/components/BaseLayout";
 const Two = () => {
   return (
-    <WithSayHi>
-      <WithSayHi>
-        <h1>I am page two!</h1>
-      </WithSayHi>
-    </WithSayHi>
+    <BaseLayout>
+      <h1>I am page two!</h1>
+    </BaseLayout>
   );
 };
 
