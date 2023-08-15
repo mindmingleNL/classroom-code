@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "chair",
+    "ownerId": 2
+  },
+  {
+    "id": 2,
+    "name": "cat",
+    "ownerId": 3
+  },
+  {
+    "id": 3,
+    "name": "box",
+    "ownerId": 2
+  },
+  {
+    "id": 4,
+    "name": "game",
+    "ownerId": 1
+  },
+  {
+    "id": 5,
+    "name": "horse",
+    "ownerId": 2
+  }
+]
