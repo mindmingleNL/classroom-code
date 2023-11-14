@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Lenovo IdeaPad 3 Chromebook",
+    "price": 299,
+    "sale": null,
+    "id": 1
+  },
+  {
+    "title": "Apple MacBook Pro 14 inch M3",
+    "price": 2549,
+    "sale": 899,
+    "id": 2
+  },
+  {
+    "title": "HP EliteBook 650",
+    "price": 999,
+    "sale": null,
+    "id": 3
+  },
+  {
+    "title": "Acer Aspire 3",
+    "price": 499,
+    "sale": 399,
+    "id": 4
+  },
+  {
+    "title": "Aiden's laptop",
+    "price": 100,
+    "sale": null,
+    "id": 5
+  }
+]

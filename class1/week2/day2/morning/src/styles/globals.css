@@ -1,0 +1,11 @@
+ul {
+  padding: 0px;
+}
+.product-card {
+  list-style: none;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
