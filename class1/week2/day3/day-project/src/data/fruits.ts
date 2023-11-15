@@ -8,7 +8,7 @@ export type Fruit = {
 };
 
 // Create an array of fruit objects
-export const fruits: Fruit[] = [
+export const fruits = [
   { name: "Apple", color: "Red", taste: "Sweet", id: 1, isAvailable: true },
   { name: "Banana", color: "Yellow", taste: "Sweet", id: 2, isAvailable: true },
   {
@@ -57,3 +57,34 @@ export const fruits: Fruit[] = [
     isAvailable: true,
   },
 ];
+
+// const newFruits = fruits.map((fruit) => {
+//   if (fruit.id === 3) {
+//     const newFruit = { ...fruit, isAvailable: true };
+//     return newFruit;
+//   } else {
+//     return fruit;
+//   }
+// });
+// console.log("HERE IS NEW ==================");
+// console.log(newFruits);
+// console.log("HERE IS OLD ==================");
+// console.log(fruits);
+
+// const x = 5;
+// x = 7;
+
+// const stuff = ["Broom", "Towel", "Vacuum"];
+// const newStuff = ["Cup", ...stuff, "Chair", [...stuff]];
+
+// console.log(newStuff);
+
+// const person = { name: "Albert", occupation: "Scientist", happy: true };
+// const person2 = { ...person, salary: 5000 };
+// console.log(person2);
+// const y = ...stuff;
+
+// const anObj = { aName: "Betsy", kind: "chicken", age: 12 };
+// const aNewObj = { ...anObj, age: 42, kind: "cow" };
+
+// console.log(aNewObj);
