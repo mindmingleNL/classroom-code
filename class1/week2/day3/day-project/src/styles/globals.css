@@ -1,0 +1,16 @@
+* {
+  font-size: 32px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fruit-list {
+  border: 1px solid hotpink;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
