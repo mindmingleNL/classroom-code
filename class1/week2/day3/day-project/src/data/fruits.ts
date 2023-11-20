@@ -88,3 +88,13 @@ export const fruits = [
 // const aNewObj = { ...anObj, age: 42, kind: "cow" };
 
 // console.log(aNewObj);
+
+function bla(x: number) {
+  return [4, x];
+}
+
+const a = [2, 12];
+const [b, c] = a; // [1, 2]
+const [d, e] = bla(10);
+console.log(b); // 1
+console.log(c); // 2
