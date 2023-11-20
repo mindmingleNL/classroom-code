@@ -54,6 +54,8 @@ const findProduct = async (id: number) => {
       id: id
     }
   });
+
+  console.log(product);
 };
 
 // createProduct();
