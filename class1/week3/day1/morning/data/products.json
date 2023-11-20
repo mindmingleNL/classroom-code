@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Laptop", "price": 999.99, "category": 1 },
+  { "id": 2, "name": "Smartphone", "price": 599.99, "category": 1 },
+  { "id": 3, "name": "Headphones", "price": 199.99, "category": 1 },
+  { "id": 4, "name": "T-Shirt", "price": 29.99, "category": 2 },
+  { "id": 5, "name": "Jeans", "price": 49.99, "category": 2 },
+  { "id": 6, "name": "Sneakers", "price": 89.99, "category": 2 },
+  { "id": 7, "name": "Jacket", "price": 119.99, "category": 2 },
+  { "id": 8, "name": "Sofa", "price": 599.99, "category": 3 },
+  { "id": 9, "name": "Lamp", "price": 39.99, "category": 3 },
+  { "id": 10, "name": "Bedding Set", "price": 99.99, "category": 3 }
+]
