@@ -1,0 +1,37 @@
+{
+  "authors": [
+    {
+      "author_id": 1,
+      "name": "Jane Austen",
+      "birth_date": "1775-12-16",
+      "biography": "English novelist known for her six major novels..."
+    },
+    {
+      "author_id": 2,
+      "name": "George Orwell",
+      "birth_date": "1903-06-25",
+      "biography": "British writer, journalist, and critic..."
+    }
+  ],
+  "books": [
+    {
+      "book_id": 101,
+      "title": "Pride and Prejudice",
+      "publication_date": "1813-01-28",
+      "genre": "Classic Regency Novel",
+      "author_id": 2
+    },
+    {
+      "book_id": 102,
+      "title": "1984",
+      "publication_date": "1949-06-08",
+      "genre": "Dystopian Fiction"
+    },
+    {
+      "book_id": 103,
+      "title": "Animal Farm",
+      "publication_date": "1945-08-17",
+      "genre": "Political Satire"
+    }
+  ]
+}
