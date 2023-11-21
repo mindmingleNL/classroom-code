@@ -27,15 +27,17 @@ model Pet {
 }
 
 // Many-to-Many
-// model User {
-//   id     Int    @id @default(autoincrement())
-//   name   String
-//   likes  Song[] // Creates an implicit join table for User <-> Song
-// }
 
-// model Song {
-//   id      Int    @id @default(autoincrement())
-//   title   String
-//   artists String
-//   likedBy User[] // Creates an implicit join table for Song <-> User
-// }
+// Implicit Version
+model User {
+  id    Int    @id @default(autoincrement())
+  name  String
+  likes Song[] // Creates an implicit join table for User <-> Song
+}
+
+model Song {
+  id          Int    @id @default(autoincrement())
+  title       String
+  artists     String
+  likedByUser User[] // Creates an implicit join table for Song <-> User
+}
