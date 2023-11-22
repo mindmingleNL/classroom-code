@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Garfield",
+    "kind": "cat",
+    "likesLasagna": true,
+    "ownerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Snoopy",
+    "kind": "dog",
+    "likesLasagna": false,
+    "ownerId": 3
+  },
+  {
+    "id": 3,
+    "name": "Tweety",
+    "kind": "bird",
+    "likesLasagna": true,
+    "ownerId": 1
+  }
+]
