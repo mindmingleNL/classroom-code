@@ -9,6 +9,11 @@ app.use(json());
 
 const prisma = new PrismaClient();
 
+app.get("/owners", async (req, res) => {
+  const allOwners = await prisma.owner.findMany();
+  res.send(allOwners);
+});
+
 app.get("/pets", async (req, res) => {
   const allPets = await prisma.pet.findMany({
     select: {
@@ -30,11 +35,13 @@ app.get("/pets/:id", async (req, res) => {
   }
   const onePet = await prisma.pet.findUnique({
     where: { id: idAsNumber },
-    select: {
-      id: true,
-      name: true,
-      kind: true,
-      ownerId: true,
+    include: {
+      foods: true,
+      owner: {
+        select: {
+          name: true,
+        },
+      },
     },
   });
 
@@ -52,11 +59,53 @@ app.post("/pets", async (req, res) => {
     await prisma.pet.create({
       data: requestBody,
     });
-    res.send({ message: "Pet created!" });
+    res.status(201).send({ message: "Pet created!" });
   } catch (error) {
     res.status(500).send({ message: "Something went wrong!" });
   }
 });
+
+app.patch("/pets/:id", async (req, res) => {
+  const idFromParams = req.params.id;
+  const idAsNumber = Number(idFromParams);
+  if (isNaN(idAsNumber)) {
+    res.status(400).send({ message: "id should be a number" });
+    return; //empty return means that we are done
+  }
+
+  const requestBody = req.body;
+  try {
+    await prisma.pet.update({
+      where: {
+        id: idAsNumber,
+      },
+      data: requestBody,
+    });
+    res.send({ message: "Pet updated!" });
+  } catch (error) {
+    res.status(500).send({ message: "Something went wrong!" });
+  }
+});
+
+app.delete("/pets/:id", async (req, res) => {
+  const idFromParams = req.params.id;
+  const idAsNumber = Number(idFromParams);
+  if (isNaN(idAsNumber)) {
+    res.status(400).send({ message: "id should be a number" });
+    return; //empty return means that we are done
+  }
+  try {
+    await prisma.pet.delete({
+      where: {
+        id: idAsNumber,
+      },
+    });
+    res.send({ message: "Pet deleted :(" });
+  } catch (error) {
+    res.status(500).send({ message: "Something went wrong!" });
+  }
+});
+// Old code
 
 //   const targetPet = pets.find((pet) => pet.id === idAsNumber);
 

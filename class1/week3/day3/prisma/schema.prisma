@@ -17,10 +17,17 @@ model Pet {
   likesLasagna Boolean
   owner        Owner   @relation(fields: [ownerId], references: [id])
   ownerId      Int
+  foods        Food[]
+}
+
+model Food {
+  id   Int    @id @default(autoincrement())
+  name String
+  pets Pet[]
 }
 
 model Owner {
   id   Int    @id @default(autoincrement())
-  name String @unique
+  name String
   Pet  Pet[]
 }
