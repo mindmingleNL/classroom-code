@@ -15,10 +15,10 @@
     "prisma": "^5.6.0",
     "tsx": "^4.2.0",
     "typescript": "^5.3.2",
-    "@types/jsonwebtoken": "^9.0.5",
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/express": "^4.17.21"
   }
 }
