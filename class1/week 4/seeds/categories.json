@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "breakfast",
+    "img_url": "🍳"
+  },
+  {
+    "id": 2,
+    "name": "lunch",
+    "img_url": "🥯"
+  },
+  {
+    "id": 3,
+    "name": "dinner",
+    "img_url": "🥘"
+  },
+  {
+    "id": 4,
+    "name": "dessert",
+    "img_url": "🧁"
+  }
+]

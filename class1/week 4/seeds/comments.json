@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "recipeId": 1,
+    "rating": 4,
+    "name": "John Doe",
+    "message": "I added some cheese and it was delicious!",
+    "created_at": "2022-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "recipeId": 2,
+    "rating": 3,
+    "name": "Jane Doe",
+    "message": "I used almond milk and it turned out great.",
+    "created_at": "2022-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "recipeId": 3,
+    "rating": 5,
+    "name": "Mary Johnson",
+    "message": "I added some chili flakes for a bit of kick, would recommend!",
+    "created_at": "2022-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "recipeId": 4,
+    "rating": 2,
+    "name": "James Smith",
+    "message": "I used bell peppers instead of regular peppers and it was very good.",
+    "created_at": "2022-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "recipeId": 5,
+    "rating": 5,
+    "name": "Jennifer Williams",
+    "message": "I added some blueberries on top, and it was fantastic!",
+    "created_at": "2022-01-05T00:00:00Z"
+  }
+]
