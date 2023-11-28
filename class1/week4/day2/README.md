@@ -1,0 +1,10 @@
+- Full stack x
+  - Server (Express)
+    - We make data available to be CRUDed
+  - Client (Next.js/React)
+    - We make data available to be interacted with
+  - Two separate repositories (front & back)
+  - Two applications running in our terminals
+  - Two ports take (one for the frontend and one for the backend)
+- CORS x
+- Forms in React
