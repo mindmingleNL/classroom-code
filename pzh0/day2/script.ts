@@ -1,28 +1,22 @@
 //////////////
-// Example 1
+// Working with objects
 
-// Function to double the value
-function double(x) {
-  return x * 2;
+// Interface maken
+
+type Materiaal = "metaal" | "rubber" | "plastic";
+
+interface Tanker {
+  volume: number;
+  liters: number;
+  materiaal: Materiaal;
+  diesel: boolean;
+  gewicht: number;
+  bemanning: number;
 }
 
-// console.log(double("4"));
-
-//////////////
-// Example 2
-
-function multiply(num1, num2) {
-  return num1 * num2;
-}
-
-// console.log(multiply("6", "3"));
-
-//////////////
-// Example 3
-
-const checkVergunningVoorTanker = (tanker) => {
+const checkVergunningVoorTanker = (tanker: Tanker) => {
   const { volume, liters, materiaal, diesel, gewicht, bemanning } = tanker;
-  if (liters < 50) {
+  if (diesel) {
     return true;
   } else {
     return false;
@@ -31,8 +25,8 @@ const checkVergunningVoorTanker = (tanker) => {
 
 const resultVergunning = checkVergunningVoorTanker({
   volume: 100,
-  liters: "12",
-  materiaal: 65,
+  liters: 12,
+  materiaal: "metaal",
   diesel: true,
   gewicht: 12,
   bemanning: 80
@@ -41,8 +35,56 @@ const resultVergunning = checkVergunningVoorTanker({
 // console.log(resultVergunning);
 
 //////////////
-// Example 4 - Inference
+// Inference
 
 const obj = { width: 10, height: 15 };
-const area = obj.width * obj.heigth;
-// console.log(area);
+const area = obj.width * obj.height;
+console.log(area);
+
+// Node Package Manager
+
+//////////////
+// Optional Properties
+
+interface Blog {
+  publicaties: number[];
+}
+
+interface User {
+  name: string;
+  id: number;
+  birthday?: string;
+  profilePicture: null | string;
+}
+
+const user1: User = {
+  name: "John",
+  id: 0,
+  profilePicture: null
+};
+
+const user2: User = {
+  name: "John",
+  id: 0,
+  birthday: "12/01/1994",
+  profilePicture: "https:jasd.com/jdajsd.jpg"
+};
+
+//////////////
+// Basics
+// Number types
+// String types
+// Booleans types
+// 'special' types
+
+//////////////
+// Typing an Array
+const numberArray: User[] = [user1, user2];
+
+//////////////
+// Union Types
+type PetNames = "Peluso" | "Gijs" | "Snorre";
+const pet: PetNames = "Peluso";
+
+//////////////
+// More Complex Interfaces
