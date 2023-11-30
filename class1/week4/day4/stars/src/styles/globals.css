@@ -1,0 +1,23 @@
+body {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  font-size: 2rem;
+  color: gold;
+}
+
+.star-btn {
+  cursor: pointer;
+}
+
+.star-btn:hover {
+  font-size: 2.2rem;
+}
+
+.hidden-inp {
+  display: none;
+}
