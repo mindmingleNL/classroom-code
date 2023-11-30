@@ -77,31 +77,14 @@ const farms: Farm[] = [
 ];
 
 // 1. Give the name of every sheep
-// Filter, Map
 const sheepNames = animals;
 
 // 2. Give the id of every animal that is a cow and hasn't been fed
-// Filter, Filter, Map
 const unfedCowIds = animals;
 
-// Give the name of every unfed animal on the farm owned by a person named Mary.
-// First find Mary
-// Then find Marys Farm
-// Then
-const marysFarm = farms.find((farm: Farm): boolean => {
-  const mary = people.find((person: Person): boolean => person.name === "Mary");
-  if (mary) {
-    return farm.farmer === mary.id;
-  } else {
-    return false; // Fallback
-  }
-});
+// 3. Give the name of every unfed animal on the farm owned by a person named Mary.
+const marysFarm = farms;
 
 if (marysFarm) {
-  const namesOfUnfedAnimalsOnMarysFarm = animals
-    .filter((animal: Animal): boolean => marysFarm.animals.includes(animal.id))
-    .filter((animal: Animal): boolean => !animal.hasBeenFed)
-    .map((animal: Animal): string => animal.name);
-
-  console.log(namesOfUnfedAnimalsOnMarysFarm);
+  const namesOfUnfedAnimalsOnMarysFarm = animals;
 }
