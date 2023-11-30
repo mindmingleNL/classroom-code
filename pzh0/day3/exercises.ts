@@ -187,31 +187,36 @@ const events = [
 ];
 
 // Exercise 1: Find a User
+// Using the `.find` method, locate the user with the username "janedoe".
 const findUserByUsername = (username: string) => {
-  // Implementation
+  // Implement the find method here
 };
 
 // Exercise 2: Format User Emails
+// Use the `.map` method to create an array of email strings from the users array.
 const formatUserEmails = () => {
-  // Implementation
+  // Implement the map method here
 };
 
 // Exercise 3: Filter Admin Users
+// Utilize the `.filter` method to obtain an array of users where the role is "admin".
 const filterAdminUsers = () => {
-  // Implementation
+  // Implement the filter method here
 };
 
 // Exercise 4: Filter Upcoming Appointments
+// Use the `.filter` method to get all upcoming appointments after a certain date from the appointments array.
 const filterUpcomingAppointments = (date: Date) => {
-  // Implementation
+  // Implement the filter method here
 };
 
 // Exercise 5: Find Next Available Appointment
+// Using the `.find` method, locate the next available appointment type "Therapy" after a given date.
 const findNextTherapyAppointment = (date: Date) => {
-  // Implementation
+  // Implement the find method here
 };
 
-// Exercise 6 BONUS: Calculate Total Stock Value
+// Exercise 6 - BONUS: Calculate Total Stock Value
 // Use the `.map` method to calculate the total value of products in stock (price * stock).
 // Then use the `.reduce` method to sum up the total value.
 const calculateTotalStockValue = () => {
