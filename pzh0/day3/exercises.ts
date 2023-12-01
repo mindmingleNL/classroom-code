@@ -220,8 +220,14 @@ const findNextTherapyAppointment = (date: Date) => {
 // Use the `.map` method to calculate the total value of products in stock (price * stock).
 // Then use the `.reduce` method to sum up the total value.
 const calculateTotalStockValue = () => {
-  // Implement the map and reduce methods here
+  // First map each product to its stock value
+  const stockValues = products.map((product) => product.price * product.stock);
+  // Then reduce the array to a single sum value
+  const totalStockValue = stockValues.reduce((acc, value) => acc + value, 0);
+  return totalStockValue;
 };
+
+console.log(calculateTotalStockValue());
 
 const user1 = {
   name: "Aiden",
