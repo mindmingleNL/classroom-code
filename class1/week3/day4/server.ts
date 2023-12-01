@@ -2,12 +2,14 @@ import express from "express";
 import { PrismaClient } from "@prisma/client";
 import { toData, toToken } from "./auth/jwt";
 import { AuthRequest, authMiddleware } from "./auth/middleware";
+import cors from "cors";
 
 const prisma = new PrismaClient();
 const app = express();
 const port = 3001;
 
 app.use(express.json());
+app.use(cors());
 
 app.post("/tweet", async (req, res) => {
   const { text, userId } = req.body;
@@ -55,9 +57,6 @@ app.post("/secure-tweet", authMiddleware, async (req: AuthRequest, res) => {
 app.get("/users", async (req, res) => {
   // Extract the 'authorization' header from the request. This typically contains the JWT token.
   const headers = req.headers;
-  // const authHeaderSent = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcwMDczMzM3NCwiZXhwIjoxNzAxOTQyOTc0fQ.S2BHMjfdxeyuYXrr3ae2D2vaBQ2OJn_sR16uTpAKXQ8"
-  // const headerSplitted = authHeaderSent.split(" ")
-  // const createdArray = ["Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcwMDczMzM3NCwiZXhwIjoxNzAxOTQyOTc0fQ.S2BHMjfdxeyuYXrr3ae2D2vaBQ2OJn_sR16uTpAKXQ8"]
 
   // Check if the 'authorization' header is present and formatted as 'Bearer <token>'.
   if (
@@ -70,6 +69,7 @@ app.get("/users", async (req, res) => {
     try {
       // Attempt to verify and decode the token using the secret key.
       const data = toData(token);
+
       // Token verification successful; proceed with user retrieval.
 
       const allUsers = await prisma.user.findMany({
