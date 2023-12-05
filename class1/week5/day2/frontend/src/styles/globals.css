@@ -4,3 +4,15 @@ body {
   align-items: center;
   font-family: monospace;
 }
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.error-msg {
+  color: white;
+  background-color: red;
+  padding: 5px;
+}

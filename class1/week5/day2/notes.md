@@ -12,3 +12,7 @@
   - Run-time (after compiling ts -> js) No Types
 
 - Better forms (React Hook Forms)
+  - We use forms to get data from users
+    - Collect on the front end (validate with Zod, a nice user experience (UX))
+    - Send it to the back end (validate with Zod, data security)
+    - Save it to the db or check it or whatever (validate by prisma)

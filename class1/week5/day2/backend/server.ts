@@ -1,9 +1,11 @@
 import express from "express";
 import animals from "./animals.json";
 import cors from "cors";
+
 const app = express();
 
 app.use(cors());
+
 const port = 3001;
 
 app.get("/animals", (req, res) => {
