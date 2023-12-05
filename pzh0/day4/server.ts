@@ -11,7 +11,13 @@ app.get("/hoi", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hai");
+  res.send("Hai!");
+});
+
+app.get("/students", (req, res) => {
+  // res.send(["Danny", "Max", "Adil", "Tijmen", "Constantijn"]);
+
+  res.send({ age: 12 });
 });
 
 app.listen(port, () => {
