@@ -110,9 +110,9 @@ main {
   align-self: end;
 } */
 
-header {
+/* header {
   min-height: 50vh;
-}
+} */
 
 li:nth-child(odd) {
   align-self: start;
@@ -120,4 +120,103 @@ li:nth-child(odd) {
 
 li:nth-child(even) {
   align-self: end;
+}
+
+/* CSS GRID */
+
+.grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 500px;
+}
+
+.grid-child {
+  background-color: red;
+  border: 2px solid blue;
+  /* height: 100px; */
+}
+
+.child-one {
+  grid-row: 4;
+  grid-column: 6;
+}
+
+.child-two {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+
+/* Grid-2 page */
+.grid-2 {
+  height: 100vh;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: green;
+}
+header {
+  grid-area: header;
+  background-color: red;
+}
+main {
+  grid-area: main;
+  background-color: hotpink;
+}
+
+/* Grid-3 Page */
+.grid-3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  /* grid-template-areas:
+    "header header"
+    "sidebar main"; */
+}
+
+.grid-3 div {
+  background-color: red;
+  border: 1px solid blue;
+  /* height: 10px; */
+}
+
+.grid-3-child-1,
+.grid-3-child-2 {
+  grid-column: span 3;
+}
+
+.grid-3-child-3,
+.grid-3-child-4,
+.grid-3-child-5 {
+  grid-column: span 2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  .grid-3 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .grid-3-child-1,
+  .grid-3-child-2 {
+    grid-column: span 6;
+  }
+
+  .grid-3-child-3,
+  .grid-3-child-4,
+  .grid-3-child-5 {
+    grid-column: span 6;
+  }
 }
