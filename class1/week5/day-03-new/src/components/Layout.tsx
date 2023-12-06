@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import NavBar from "./NavBar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,19 +9,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/login">Login</Link>
-          </li>
-          <li>
-            <Link href="/protected">Protected</Link>
-          </li>
-        </ul>
-      </nav>
+      <NavBar />
       <main>{children}</main>
       <footer>
         <span>2023 CopyRight by law in Utrecht!</span>

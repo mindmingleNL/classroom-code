@@ -97,3 +97,15 @@ h6 {
   color: #fffffe;
   border: 2px solid hsl(262 58% 62% / 1);
 }
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-container ul {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  gap: 20px;
+}
