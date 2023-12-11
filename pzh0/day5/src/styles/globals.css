@@ -1,0 +1,12 @@
+.button {
+  background-color: red;
+  color: white;
+  border: 1px solid hotpink;
+  padding: 5px 10px;
+}
+
+.contact-button {
+  background-color: blue;
+  font-size: 20px;
+  border-radius: 5px;
+}
