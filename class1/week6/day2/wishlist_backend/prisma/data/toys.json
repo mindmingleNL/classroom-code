@@ -1,0 +1,163 @@
+[
+    {
+        "toyName": "Baby Yoda",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper enim sem, et porta orci placerat vel.",
+        "imgUrl": "https://i.imgur.com/T8Tw7Hp.jpeg",
+        "safeForChildren": true,
+        "price": 20
+    },
+    {
+        "toyName": "Badminton set",
+        "description": "Sed felis nunc, ultrices a porta vel, eleifend sit amet dui.",
+        "imgUrl": "https://i.imgur.com/9FatLtw.jpeg",
+        "safeForChildren": true,
+        "price": 40
+    },
+    {
+        "toyName": "Cool bike",
+        "description": "Morbi quis viverra leo, vel egestas sem. Ut posuere tincidunt purus in commodo. Donec tincidunt dui nec nunc aliquam pellentesque.",
+        "imgUrl": "https://i.imgur.com/DDbVBxX.jpeg",
+        "safeForChildren": true,
+        "price": 150
+    },
+    {
+        "toyName": "Cocktail making set",
+        "description": "Donec eleifend aliquam lectus ac pellentesque. Proin porta libero dictum magna congue vehicula.",
+        "imgUrl": "https://i.imgur.com/GusdobF.jpeg",
+        "safeForChildren": false,
+        "price": 60
+    },
+    {
+        "toyName": "Anna & Elza dolls",
+        "description": "Cras quam ex, volutpat non ante sed, iaculis tincidunt tellus. Donec varius semper pharetra.",
+        "imgUrl": "https://i.imgur.com/ykobAtT.jpeg",
+        "safeForChildren": true,
+        "price": 35
+    },
+    {
+        "toyName": "Electric guitar starter pack",
+        "description": "Nunc viverra nulla luctus dolor sagittis, vitae convallis metus feugiat. Nulla tincidunt accumsan quam, sit amet egestas odio.",
+        "imgUrl": "https://i.imgur.com/5BNLnLx.jpeg",
+        "safeForChildren": true,
+        "price": 250
+    },
+    {
+        "toyName": "Harry Potter toys",
+        "description": "Fusce egestas semper sapien, ac sagittis enim accumsan placerat. Nam vitae congue lectus.",
+        "imgUrl": "https://i.imgur.com/0fCC2My.jpeg",
+        "safeForChildren": true,
+        "price": 40
+    },
+    {
+        "toyName": "IKEA shark",
+        "description": "Donec eget eros arcu.",
+        "imgUrl": "https://i.imgur.com/VwoCiXQ.jpeg",
+        "safeForChildren": true,
+        "price": 15
+    },
+    {
+        "toyName": "Imperial walker plush toy",
+        "description": "Vivamus justo velit, lacinia at viverra sed, tincidunt sit amet purus.",
+        "imgUrl": "https://i.imgur.com/Pvgmnja.jpeg",
+        "safeForChildren": true,
+        "price": 10
+    },
+    {
+        "toyName": "iPad",
+        "description": "Curabitur vel leo mauris. Sed eget purus sit amet nibh varius interdum quis nec dolor.",
+        "imgUrl": "https://i.imgur.com/KdJ10ag.jpeg",
+        "safeForChildren": true,
+        "price": 20
+    },
+    {
+        "toyName": "Jack Daniels Gift Box",
+        "description": "Ut sodales tortor est, a facilisis orci commodo a. Duis commodo suscipit nulla ac porta.",
+        "imgUrl": "https://i.imgur.com/D4j9Zgo.jpeg",
+        "safeForChildren": false,
+        "price": 80
+    },
+    {
+        "toyName": "Lady Bug costume",
+        "description": "Nullam vitae odio vestibulum, tincidunt dui eget, pharetra ligula. Praesent feugiat sit amet neque sed vulputate.",
+        "imgUrl": "https://i.imgur.com/Evtvxgc.jpeg",
+        "safeForChildren": true,
+        "price": 40
+    },
+    {
+        "toyName": "LEGO Duplo train set",
+        "description": "Sed mollis quam ultricies nisi mattis, at congue lorem feugiat. Fusce a arcu arcu. Integer facilisis non erat id scelerisque.",
+        "imgUrl": "https://i.imgur.com/0P6BOO0.jpeg",
+        "safeForChildren": true,
+        "price": 75
+    },
+    {
+        "toyName": "Microscope",
+        "description": "In sollicitudin eu lorem ac pellentesque. ",
+        "imgUrl": "https://i.imgur.com/NdZu7ag.jpeg",
+        "safeForChildren": true,
+        "price": 35
+    },
+    {
+        "toyName": "Decoration accessory",
+        "description": "Morbi sed luctus quam. Admit it there's no better gift, order now. In non egestas libero.",
+        "imgUrl": "https://i.imgur.com/CMpC3bM.jpeg",
+        "safeForChildren": false,
+        "price": 15
+    },
+    {
+        "toyName": "Clown nose",
+        "description": "In ipsum ex, rutrum non gravida et, efficitur in eros.",
+        "imgUrl": "https://i.imgur.com/mOVy3Nl.jpeg",
+        "safeForChildren": false,
+        "price": 25
+    },
+    {
+        "toyName": "Rembrandt starter pack",
+        "description": "Integer lobortis, neque id ultrices luctus, mi risus interdum erat, nec auctor quam lectus ultrices erat.",
+        "imgUrl": "https://i.imgur.com/Vw4iAZ1.jpeg",
+        "safeForChildren": true,
+        "price": 20
+    },
+    {
+        "toyName": "Scooter",
+        "description": "Aenean sed eros laoreet, luctus nunc vel, interdum lectus. Vivamus auctor et urna eu fermentum. Duis sit amet tortor nec diam eleifend vulputate.",
+        "imgUrl": "https://i.imgur.com/mdED87h.jpeg",
+        "safeForChildren": true,
+        "price": 100
+    },
+    {
+        "toyName": "Umbrella",
+        "description": "Integer eu turpis id eros iaculis congue. Ut a felis sed elit accumsan luctus non faucibus lacus",
+        "imgUrl": "https://i.imgur.com/qjgePSo.jpeg",
+        "safeForChildren": true,
+        "price": 15
+    },
+    {
+        "toyName": "Harion V60 pour over coffee set",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "imgUrl": "https://i.imgur.com/uTEpuAj.jpeg",
+        "safeForChildren": false,
+        "price": 50
+    },
+    {
+        "toyName": "Smoking pipe",
+        "description": "Sed rutrum tincidunt posuere. Suspendisse potenti.",
+        "imgUrl": "https://i.imgur.com/I3J7you.jpeg",
+        "safeForChildren": false,
+        "price": 12
+    },
+    {
+        "toyName": "Winnie the Pooh",
+        "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam feugiat quis enim in aliquam.",
+        "imgUrl": "https://i.imgur.com/r156z7x.jpeg",
+        "safeForChildren": true,
+        "price": 8
+    },
+    {
+        "toyName": "XBox",
+        "description": "Donec sodales mattis ipsum, vitae condimentum est porta ac.",
+        "imgUrl": "https://i.imgur.com/dZfoBm1.jpeg",
+        "safeForChildren": true,
+        "price": 50
+    }
+]
