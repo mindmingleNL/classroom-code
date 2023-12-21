@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Snoopy",
+    "good": true
+  },
+  {
+    "id": 2,
+    "name": "Garfield",
+    "good": true
+  },
+  {
+    "id": 3,
+    "name": "Tweety",
+    "good": true
+  }
+]
