@@ -1,0 +1,82 @@
+[
+  {
+    "id": "V001",
+    "type": "Bouwvergunning",
+    "aanvrager": "De Bouwers BV",
+    "locatie": "Leiden",
+    "aanvraagDatum": "2023-01-15",
+    "status": "In behandeling"
+  },
+  {
+    "id": "V002",
+    "type": "Sloopvergunning",
+    "aanvrager": "Sloop en Co",
+    "locatie": "Den Haag",
+    "aanvraagDatum": "2023-01-20",
+    "status": "Goedgekeurd"
+  },
+  {
+    "id": "V003",
+    "type": "Milieuvergunning",
+    "aanvrager": "Green Future NV",
+    "locatie": "Dordrecht",
+    "aanvraagDatum": "2023-02-05",
+    "status": "Afgewezen"
+  },
+  {
+    "id": "V004",
+    "type": "Evenementenvergunning",
+    "aanvrager": "Festival Org",
+    "locatie": "Gouda",
+    "aanvraagDatum": "2023-02-12",
+    "status": "In behandeling"
+  },
+  {
+    "id": "V005",
+    "type": "Horecavergunning",
+    "aanvrager": "Eetcafé Het Lekkere Hoekje",
+    "locatie": "Rotterdam",
+    "aanvraagDatum": "2023-02-20",
+    "status": "Goedgekeurd"
+  },
+  {
+    "id": "V006",
+    "type": "Watervergunning",
+    "aanvrager": "Aquarius Watersport",
+    "locatie": "Zoetermeer",
+    "aanvraagDatum": "2023-02-28",
+    "status": "In behandeling"
+  },
+  {
+    "id": "V007",
+    "type": "Kapvergunning",
+    "aanvrager": "Boomweg BV",
+    "locatie": "Spijkenisse",
+    "aanvraagDatum": "2023-03-10",
+    "status": "Goedgekeurd"
+  },
+  {
+    "id": "V008",
+    "type": "Reclamevergunning",
+    "aanvrager": "Advertentie Groot BV",
+    "locatie": "Delft",
+    "aanvraagDatum": "2023-03-15",
+    "status": "Afgewezen"
+  },
+  {
+    "id": "V009",
+    "type": "Drank- en Horecavergunning",
+    "aanvrager": "Café De Vrolijke Noot",
+    "locatie": "Leiden",
+    "aanvraagDatum": "2023-03-22",
+    "status": "In behandeling"
+  },
+  {
+    "id": "V010",
+    "type": "Bouwvergunning",
+    "aanvrager": "Nieuwbouw Projecten BV",
+    "locatie": "Den Haag",
+    "aanvraagDatum": "2023-03-29",
+    "status": "Goedgekeurd"
+  }
+]
