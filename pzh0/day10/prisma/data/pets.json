@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Tweety", "age": 2, "tame": true, "kindId": 4 },
+  { "id": 2, "name": "Garfield", "age": 6, "tame": true, "kindId": 2 },
+  { "id": 3, "name": "Jerry", "age": 1, "tame": false, "kindId": 3 },
+  { "id": 4, "name": "Lassie", "age": 2, "tame": true, "kindId": 1 },
+  { "id": 5, "name": "Clifford", "age": 12, "tame": true, "kindId": 1 }
+]

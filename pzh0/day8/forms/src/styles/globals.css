@@ -1,0 +1,18 @@
+html {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  opacity: 0.7;
+}
+
+.error {
+  color: red;
+}

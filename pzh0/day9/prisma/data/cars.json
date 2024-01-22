@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "gears": 6,
+    "color": "Blue",
+    "price": 25000
+  },
+  {
+    "id": 2,
+    "brand": "Honda",
+    "gears": 5,
+    "color": "Red",
+    "price": 22000
+  },
+  {
+    "id": 3,
+    "brand": "Ford",
+    "gears": 8,
+    "color": "Black",
+    "price": 30000
+  },
+  {
+    "id": 4,
+    "brand": "Chevrolet",
+    "gears": 7,
+    "color": "Silver",
+    "price": 28000
+  },
+  {
+    "id": 5,
+    "brand": "Nissan",
+    "gears": 6,
+    "color": "White",
+    "price": 27000
+  },
+  {
+    "id": 6,
+    "brand": "BMW",
+    "gears": 7,
+    "color": "Grey",
+    "price": 40000
+  },
+  {
+    "id": 7,
+    "brand": "Mercedes",
+    "gears": 9,
+    "color": "Green",
+    "price": 45000
+  },
+  {
+    "id": 8,
+    "brand": "Audi",
+    "gears": 8,
+    "color": "Yellow",
+    "price": 42000
+  },
+  {
+    "id": 9,
+    "brand": "Hyundai",
+    "gears": 5,
+    "color": "Orange",
+    "price": 20000
+  },
+  {
+    "id": 10,
+    "brand": "Kia",
+    "gears": 6,
+    "color": "Purple",
+    "price": 23000
+  }
+]
