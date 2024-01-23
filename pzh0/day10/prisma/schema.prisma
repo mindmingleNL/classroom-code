@@ -10,17 +10,40 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Owner {
+  id   Int    @id @default(autoincrement())
+  name String
+  pets Pet[]
+}
+
 model Pet {
-  id     Int     @id @default(autoincrement())
-  name   String
-  age    Int
-  tame   Boolean
-  kind   Kind    @relation(fields: [kindId], references: [id])
-  kindId Int
+  id       Int        @id @default(autoincrement())
+  name     String
+  age      Int
+  tame     Boolean
+  kind     Kind       @relation(fields: [kindId], references: [id])
+  kindId   Int
+  owners   Owner[]
+  Pet_Food Pet_Food[]
 }
 
 model Kind {
   id   Int    @id @default(autoincrement())
   name String
   Pet  Pet[]
+}
+
+model Pet_Food {
+  id     Int  @id @default(autoincrement())
+  petId  Int
+  Pet    Pet  @relation(references: [id], fields: [petId])
+  foodId Int
+  Food   Food @relation(fields: [foodId], references: [id])
+  rating Int
+}
+
+model Food {
+  id       Int        @id @default(autoincrement())
+  name     String
+  Pet_Food Pet_Food[]
 }
