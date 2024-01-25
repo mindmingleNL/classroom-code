@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "🐮 Bessie",
+    "kind": "Cow",
+    "farmId": 1
+  },
+  {
+    "id": 2,
+    "name": "🐔 Cluck Norris",
+    "kind": "Chicken",
+    "farmId": 2
+  },
+  {
+    "id": 3,
+    "name": "🐴 Neigh-than",
+    "kind": "Horse",
+    "farmId": 1
+  },
+  {
+    "id": 4,
+    "name": "🐷 Hamlet",
+    "kind": "Pig",
+    "farmId": 3
+  },
+  {
+    "id": 5,
+    "name": "🐑 Wooliam",
+    "kind": "Sheep",
+    "farmId": 2
+  }
+]
