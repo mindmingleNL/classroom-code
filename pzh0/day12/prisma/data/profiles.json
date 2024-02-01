@@ -1,0 +1,32 @@
+[
+  {
+    "city": "Utrecht",
+    "hobby": "Stamp collector",
+    "pets": false,
+    "User": {
+      "connect": {
+        "username": "Bob"
+      }
+    }
+  },
+  {
+    "city": "Amsterdam",
+    "hobby": "Fishing",
+    "pets": true,
+    "User": {
+      "connect": {
+        "username": "Joe"
+      }
+    }
+  },
+  {
+    "city": "Den Haag",
+    "hobby": "Bowling",
+    "pets": false,
+    "User": {
+      "connect": {
+        "username": "Alice"
+      }
+    }
+  }
+]
