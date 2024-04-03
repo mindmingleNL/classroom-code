@@ -1,0 +1,10 @@
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-error {
+  color: red;
+  text-transform: uppercase;
+}
