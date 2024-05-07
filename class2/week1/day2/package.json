@@ -9,6 +9,7 @@
   "author": "Yoeran Luteijn",
   "license": "ISC",
   "dependencies": {
+    "tsx": "^4.9.3",
     "typescript": "^5.4.5"
   }
 }

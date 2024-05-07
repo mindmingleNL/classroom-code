@@ -77,3 +77,5 @@ const classOfPersons: Human[] = [person, anotherPerson];
 
 // console.log(person.pets);
 // console.log(anotherPerson.pets);
+
+console.log("Helloooo from TS file");
