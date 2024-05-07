@@ -1,0 +1,14 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "morning.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yoeran Luteijn",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
