@@ -67,6 +67,7 @@ const availableBooks: Book[] = library.filter(
 );
 
 const removeBook = (book: Book): Book[] => {
+  console.log(book);
   return library.filter((item) => item.title !== book.title);
 };
 
