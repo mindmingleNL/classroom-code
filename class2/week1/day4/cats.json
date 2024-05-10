@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Whiskers",
+    "breed": "Siamese",
+    "age": 3,
+    "color": "seal point",
+    "gender": "male",
+    "is_adult": true,
+    "hobbies": ["playing with yarn", "bird watching"]
+  },
+  {
+    "name": "Mittens",
+    "breed": "Persian",
+    "age": 5,
+    "color": "white",
+    "gender": "female",
+    "is_adult": true,
+    "hobbies": ["napping", "being brushed"]
+  },
+  {
+    "name": "Tiger",
+    "breed": "Bengal",
+    "age": 2,
+    "color": "brown spotted",
+    "gender": "male",
+    "is_adult": false,
+    "hobbies": ["chasing toys", "climbing trees"]
+  },
+  {
+    "name": "Luna",
+    "breed": "Maine Coon",
+    "age": 4,
+    "color": "tabby",
+    "gender": "female",
+    "is_adult": true,
+    "hobbies": ["exploring", "cuddling"]
+  },
+  {
+    "name": "Simba",
+    "breed": "Siberian",
+    "age": 1,
+    "color": "orange",
+    "gender": "male",
+    "is_adult": false,
+    "hobbies": ["chasing laser pointer", "hunting toys"]
+  },
+  {
+    "name": "Smokey",
+    "breed": "Russian Blue",
+    "age": 6,
+    "color": "gray",
+    "gender": "male",
+    "is_adult": true,
+    "hobbies": ["sunbathing", "watching TV"]
+  },
+  {
+    "name": "Mittens",
+    "breed": "American Shorthair",
+    "age": 2,
+    "color": "calico",
+    "gender": "female",
+    "is_adult": false,
+    "hobbies": ["playing with balls", "chasing shadows"]
+  },
+  {
+    "name": "Oliver",
+    "breed": "British Shorthair",
+    "age": 4,
+    "color": "blue",
+    "gender": "male",
+    "is_adult": true,
+    "hobbies": ["sleeping in cardboard boxes", "purring loudly"]
+  },
+  {
+    "name": "Link",
+    "breed": "Ragdoll",
+    "age": 3,
+    "color": "colorpoint",
+    "gender": "female",
+    "is_adult": true,
+    "hobbies": ["being carried around", "playing with feather toys"]
+  },
+  {
+    "name": "Max",
+    "breed": "Scottish Fold",
+    "age": 2,
+    "color": "white and tabby",
+    "gender": "male",
+    "is_adult": false,
+    "hobbies": ["exploring boxes", "pouncing on toys"]
+  }
+]
