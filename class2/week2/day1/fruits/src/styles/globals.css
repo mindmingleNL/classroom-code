@@ -1,0 +1,22 @@
+body {
+  color: hotpink;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-bottom: 1px solid hotpink;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.greeting {
+  color: greenyellow;
+  background: hotpink;
+  border: 2px solid navy;
+  margin: 2rem;
+  padding: 1rem;
+}
