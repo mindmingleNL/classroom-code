@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Homepage</title>
+
+</head>
+
+<body>
+    <Navigation primary="true" />
+    <h1>Welcome to Fruits.com 🍎</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sint.</p>
+
+    <div id="counter">0</div>
+    <button onclick="increase();">+</button>
+    <script>
+        let counter = 0;
+        function increase() {
+            counter = counter + 1
+            console.log("I AM HERE")
+            document.getElementById("counter").innerHTML = `<h2>${counter}</h2>`
+        }
+    </script>
+</body>
+
+</html>
