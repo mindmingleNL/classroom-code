@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .greeting {
@@ -19,4 +19,20 @@ body {
   border: 2px solid navy;
   margin: 2rem;
   padding: 1rem;
+}
+
+h1 {
+  border-bottom: 1px solid green;
+}
+
+/* h1 {
+  color: blue;
+} */
+
+.studentCard {
+  background-color: blueviolet;
+  color: hotpink;
+  padding: 2rem;
+  border: 12px dashed yellow;
+  margin: 2rem;
 }
