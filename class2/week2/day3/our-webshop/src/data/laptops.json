@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Pro 13-inch",
+    "category": "TV",
+    "price": 1000,
+    "onSale": true,
+    "discount": 200
+  },
+  {
+    "id": 2,
+    "name": "Dell XPS 15",
+    "category": "Laptop",
+    "price": 1200,
+    "onSale": true,
+    "discount": null
+  },
+  {
+    "id": 3,
+    "name": "iPhone 13 Pro",
+    "category": "Smartphone",
+    "price": 1099,
+    "onSale": false,
+    "discount": null
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy S22 Ultra",
+    "category": "Smartphone",
+    "price": 1199,
+    "onSale": false,
+    "discount": null
+  },
+  {
+    "id": 5,
+    "name": "PlayStation 5",
+    "category": "Gaming Console",
+    "price": 499,
+    "onSale": false,
+    "discount": null
+  },
+  {
+    "id": 6,
+    "name": "Xbox Series X",
+    "category": "Gaming Console",
+    "price": 499,
+    "onSale": false,
+    "discount": null
+  }
+]
