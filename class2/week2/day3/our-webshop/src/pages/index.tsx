@@ -1,46 +1,40 @@
+import { useState } from "react";
+import { ProductCard, ProductProps } from "../components/Product";
 import laptops from "../data/laptops.json";
 
-interface ProductProps {
-  model: string;
-  category: "Laptop" | "Smartphone" | "Gaming Console";
-  price: number;
-  onSale: boolean;
-  discount: number | null;
-}
-
-const Product = ({
-  model,
-  category,
-  price,
-  onSale,
-  discount,
-}: ProductProps) => {
-  return (
-    <li className="product-list__card">
-      <h2>{model}</h2>
-      <p>Category: {category}</p>
-      <p>Get it now for €{price}</p>
-
-      {onSale && discount !== null ? (
-        <strong>ON SALE: €{discount}</strong>
-      ) : null}
-
-      <button className="product-list__buy-button">Buy</button>
-    </li>
-  );
-};
-
 export default function Home() {
+  const [getProducts, setProducts] = useState([
+    "laptop",
+    "smartphone",
+    "tv",
+    "DJI",
+    "gaming console",
+  ]);
+
+  // 1. make a function to add tablet
+  const addProduct = (product: string) => {
+    // 2. add tablet to array
+    const allProducts = [...getProducts, product];
+    setProducts(allProducts);
+  };
+
   return (
     <main>
       <h1>Our Webshop</h1>
+      {/* 4. display */}
+      <p>I want a couple of products: {getProducts.join(", ")}</p>
+
+      {/* 3. make the button use the function */}
+      <button onClick={() => addProduct("tablet")}>Add tablet</button>
+
+      <hr />
 
       <ul className="product-list">
         {laptops
           .filter((laptop) => laptop.price > 500)
           .sort((a, b) => a.price - b.price)
           .map((laptop) => (
-            <Product
+            <ProductCard
               key={laptop.name}
               model={laptop.name}
               category={laptop.category as ProductProps["category"]}
