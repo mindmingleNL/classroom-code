@@ -57,6 +57,7 @@ const BarPage = () => {
       <p>{getPokeData.name}</p>
       <p>This pokemon {getPokeData.height} high</p>
       <img
+        className="pokeimg"
         src={
           getPokeData.sprites.versions["generation-v"]["black-white"].animated
             .front_default
