@@ -1,0 +1,13 @@
+body {
+  font-family: "monospace";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-icon {
+  background-color: hotpink;
+  border: 1px solid blue;
+  padding: 1rem;
+  font-size: 2rem;
+}
