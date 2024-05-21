@@ -90,4 +90,27 @@ const deleteProduct = async () => {
   console.log(product);
 };
 
-deleteProduct();
+// deleteProduct();
+
+// Try/catch errors
+const findOneProduct = async (id: number) => {
+  //  try {
+  //   // we're trying to do something
+  //  } catch (error) {
+  //   // here we can handle if it goes wrong
+  //  }
+
+  try {
+    const product = await prisma.product.findUniqueOrThrow({
+      where: {
+        id: id,
+      },
+    });
+
+    console.log(product);
+  } catch (error) {
+    console.log("An error has ocurred!");
+  }
+};
+
+findOneProduct(999);

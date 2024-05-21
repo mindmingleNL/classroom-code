@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MacBook Pro 13-inch",
+    "price": 1000
+  },
+  {
+    "name": "Dell XPS 15",
+    "price": 1200
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "price": 1099
+  },
+  {
+    "name": "Samsung Galaxy S22 Ultra",
+    "price": 1199
+  },
+  {
+    "name": "PlayStation 5",
+    "price": 499
+  },
+  {
+    "name": "Xbox Series X",
+    "price": 499
+  }
+]
