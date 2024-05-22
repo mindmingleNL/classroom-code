@@ -1,0 +1,36 @@
+[
+  {
+    "color": "red",
+    "model": "SuperTrain",
+    "createdAt": "2024-05-22T09:28:12.039Z",
+    "numberOfWagons": 5,
+    "price": 1000000
+  },
+  {
+    "color": "blue",
+    "model": "Sonic Train",
+    "createdAt": "2024-05-22T09:28:12.039Z",
+    "numberOfWagons": 15,
+    "price": 1000000000
+  },
+  {
+    "color": "pink",
+    "model": "Cute Train",
+    "createdAt": "2024-05-22T09:28:12.039Z",
+    "numberOfWagons": 1,
+    "price": 100000
+  },
+  {
+    "color": "orange",
+    "model": "King's Luxury Train",
+    "createdAt": "2024-05-22T09:28:12.039Z",
+    "numberOfWagons": 1,
+    "price": 10000000000000
+  },
+  {
+    "model": "Intercity",
+    "createdAt": "2024-05-22T09:28:12.039Z",
+    "numberOfWagons": 6,
+    "price": 45909347
+  }
+]
