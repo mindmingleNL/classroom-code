@@ -47,6 +47,7 @@ const run = async () => {
 
 const seedWithForLoop = async () => {
   for (let i = 0; i < 100; i++) {
+    // This code will run 100 times and creates 100 trains for us, with the data that we wrote down in the `data` property.
     await prisma.train.create({
       data: {
         model: `Train Number ${i}`,
@@ -62,6 +63,7 @@ const seedWithForLoop = async () => {
 
 const seedFromJson = async () => {
   for (let i = 0; i < trains.length; i++) {
+    // This code will run for every item in the list that we named trains
     const train = trains[i];
     await prisma.train.create({
       data: train,
@@ -69,7 +71,7 @@ const seedFromJson = async () => {
   }
 };
 
-seedFromJson();
+// seedFromJson();
 
 const deleteTrains = async () => {
   await prisma.train.deleteMany({
