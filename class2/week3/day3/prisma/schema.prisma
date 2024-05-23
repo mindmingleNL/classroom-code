@@ -19,10 +19,10 @@ model Plants {
   age    Int
   public Boolean
   userId Int
-  owner  User    @relation(fields: [userId], references: [id])
+  owner  Users   @relation(fields: [userId], references: [id])
 }
 
-model User {
+model Users {
   id       Int      @id @default(autoincrement())
   username String   @unique
   password String

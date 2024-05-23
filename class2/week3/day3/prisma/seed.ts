@@ -9,7 +9,7 @@ const seed = async () => {
   console.log("Seeding Users...");
   for (let i = 0; i < usersData.length; i++) {
     const thisUser = usersData[i];
-    await prisma.user.create({
+    await prisma.users.create({
       data: thisUser,
     });
   }
