@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  font-family: monospace;
+}
+.plants {
+  display: flex;
+  flex-direction: column;
+}

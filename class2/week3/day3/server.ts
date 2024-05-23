@@ -1,12 +1,12 @@
 import express, { json } from "express";
 import { PrismaClient } from "@prisma/client";
-
+import cors from "cors";
 const app = express();
 const port = 3001;
 
 // DO NOT FORGET THIS, THIS IS HOW STUDENTS FAIL THE COURSE!!!!!!
 app.use(json());
-
+app.use(cors());
 const prisma = new PrismaClient();
 
 // Only return public plants!
