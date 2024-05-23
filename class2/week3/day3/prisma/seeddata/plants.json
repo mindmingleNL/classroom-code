@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "kind": "Sunflower",
+    "age": 1,
+    "public": true,
+    "userId": 1
+  },
+  {
+    "id": 2,
+    "kind": "Daisy",
+    "age": 1,
+    "public": true,
+    "userId": 2
+  },
+  {
+    "id": 3,
+    "kind": "Cactus",
+    "age": 15,
+    "public": false,
+    "userId": 2
+  },
+  {
+    "id": 4,
+    "kind": "Daffodil",
+    "age": 6,
+    "public": true,
+    "userId": 3
+  },
+  {
+    "id": 5,
+    "kind": "Birch",
+    "age": 25,
+    "public": false,
+    "userId": 1
+  },
+  {
+    "id": 6,
+    "kind": "Forget-Me-Not",
+    "age": 2,
+    "public": false,
+    "userId": 3
+  },
+  {
+    "id": 7,
+    "kind": "Oak",
+    "age": 150,
+    "public": true,
+    "userId": 3
+  },
+  {
+    "id": 8,
+    "kind": "Poppy",
+    "age": 3,
+    "public": false,
+    "userId": 4
+  }
+]
