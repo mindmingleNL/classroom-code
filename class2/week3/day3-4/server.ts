@@ -6,6 +6,7 @@ const port = 3001;
 
 // DO NOT FORGET THIS, THIS IS HOW STUDENTS FAIL THE COURSE!!!!!!
 app.use(json());
+// You only need this when you talk to a frontend!
 app.use(cors());
 const prisma = new PrismaClient();
 
@@ -99,6 +100,7 @@ app.post("/plants", async (req, res) => {
       });
       res.status(201).send(newPlant);
     } catch (error) {
+      console.log(error);
       res.status(500).send({ message: "Something went wrong!" });
     }
   } else {
@@ -106,6 +108,34 @@ app.post("/plants", async (req, res) => {
       message:
         "'kind', 'age', 'public' & 'userId' are required. And 'kind' should be longer than 0 characters!",
     });
+  }
+});
+
+app.patch("/plants/:id", async (req, res) => {
+  const bodyFromRequest = req.body;
+  const idOfPlant = Number(req.params.id);
+
+  // CHECK THE URL ROUTE
+  if (isNaN(idOfPlant)) {
+    res.status(400).send();
+    return;
+  }
+
+  if ("id" in bodyFromRequest || Object.keys(bodyFromRequest).length === 0) {
+    res.status(400).send();
+    return;
+  }
+  try {
+    const updatedPlant = await prisma.plants.update({
+      where: {
+        id: idOfPlant,
+      },
+      data: bodyFromRequest,
+    });
+    res.send(updatedPlant);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: "Something went wrong!" });
   }
 });
 
