@@ -1,6 +1,8 @@
 import express, { json } from "express";
 import { PrismaClient } from "@prisma/client";
 import cors from "cors";
+import { toData, toToken } from "./auth/jwt";
+import { AuthMiddleware, AuthRequest } from "./auth/middleware";
 const app = express();
 const port = 3001;
 
@@ -9,6 +11,8 @@ app.use(json());
 // You only need this when you talk to a frontend!
 app.use(cors());
 const prisma = new PrismaClient();
+
+// PLANTS API //
 
 // Only return public plants!
 // Dont return the public field
@@ -72,17 +76,6 @@ app.get("/plants/:id", async (req, res) => {
   return;
 });
 
-app.get("/users", async (req, res) => {
-  const allTheUsers = await prisma.users.findMany({
-    select: {
-      id: true,
-      username: true,
-      password: false,
-    },
-  });
-  res.send(allTheUsers);
-});
-
 app.post("/plants", async (req, res) => {
   const bodyFromRequest = req.body;
 
@@ -111,7 +104,7 @@ app.post("/plants", async (req, res) => {
   }
 });
 
-app.patch("/plants/:id", async (req, res) => {
+app.patch("/plants/:id", AuthMiddleware, async (req: AuthRequest, res) => {
   const bodyFromRequest = req.body;
   const idOfPlant = Number(req.params.id);
 
@@ -126,6 +119,22 @@ app.patch("/plants/:id", async (req, res) => {
     return;
   }
   try {
+    const plantToUpdate = await prisma.plants.findUnique({
+      where: {
+        id: idOfPlant,
+      },
+    });
+
+    if (plantToUpdate === null) {
+      res.status(404).send();
+      return;
+    }
+
+    if (plantToUpdate.userId !== req.userId) {
+      res.status(401).send();
+      return;
+    }
+
     const updatedPlant = await prisma.plants.update({
       where: {
         id: idOfPlant,
@@ -162,6 +171,102 @@ app.delete("/plants/:id", async (req, res) => {
     },
   });
   res.status(200).send({ message: "Plant was deleted!" });
+});
+
+// AUTH API //
+
+app.get("/users", async (req, res) => {
+  const allTheUsers = await prisma.users.findMany({
+    select: {
+      id: true,
+      username: true,
+      password: false,
+    },
+  });
+  res.send(allTheUsers);
+});
+
+app.post("/register", async (req, res) => {
+  const bodyFromRequest = req.body;
+
+  // Data validation
+  if (
+    "username" in bodyFromRequest &&
+    "password" in bodyFromRequest &&
+    bodyFromRequest.password.length > 0 &&
+    bodyFromRequest.username.length > 0
+    // bodyFromRequest.password.length > 10 &&
+    // bodyFromRequest.password.includes("@")
+    // Any other password validation here
+  ) {
+    try {
+      const newUser = await prisma.users.create({
+        data: bodyFromRequest,
+        select: {
+          id: true,
+          username: true,
+        },
+      });
+      res.status(201).send(newUser);
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ message: "Something went wrong!" });
+    }
+  } else {
+    res.status(400).send({
+      message: "Data validation error!",
+    });
+  }
+});
+
+app.post("/login", async (req, res) => {
+  const bodyFromRequest = req.body;
+
+  // Data validation
+  if ("username" in bodyFromRequest && "password" in bodyFromRequest) {
+    // interesting stuff here
+    const userToLogin = await prisma.users.findUnique({
+      where: { username: bodyFromRequest.username },
+    });
+
+    if (userToLogin === null) {
+      res.send({ message: "Username and password combination not found" });
+      return;
+    }
+    if (userToLogin.password !== bodyFromRequest.password) {
+      res.send({ message: "Username and password combination not found" });
+      return;
+    }
+    // :)
+
+    const token = toToken({ userId: userToLogin.id });
+    res.send({ token: token });
+  } else {
+    res.status(400).send({
+      message: "Data validation error!",
+    });
+  }
+});
+
+app.get("/tokenchecker", async (req, res) => {
+  const headers = req.headers;
+  if (
+    headers["authorization"] && // Is the header there
+    headers["authorization"].split(" ")[0] === "Bearer" && // Is the first word (before the space) equal to "Bearer"
+    headers["authorization"].split(" ")[1] // Is there a part after the space
+  ) {
+    const token = headers["authorization"].split(" ")[1];
+    try {
+      const data = toData(token);
+      res.send({ message: "Good job" });
+    } catch (error) {
+      console.log(error);
+      res.status(401).send({ message: "Token missing or invalid" });
+      return;
+    }
+  } else {
+    res.send({ message: "Bad job" });
+  }
 });
 
 app.listen(port, () => {
