@@ -86,22 +86,17 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 4rem;
+  font-family: sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+form {
+  margin: 2rem 0;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+input {
+  padding: 8px;
 }
