@@ -1,0 +1,167 @@
+p {
+  /* background-color: red; */
+  background-repeat: repeat;
+  border: 1px solid black;
+  padding: 24px;
+}
+
+.nav {
+  padding: 16px;
+  background: hotpink;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  background: #cee;
+  height: 100vh;
+}
+
+.close-button {
+  position: sticky;
+  top: 16px;
+  right: 16px;
+}
+
+/* body {
+  background: green;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+}
+
+.box {
+  border: 4px solid hotpink;
+  padding: 8px;
+  margin: 16px;
+
+  width: 250px;
+}
+
+.target-with-green {
+  background: green !important;
+}
+
+.target {
+  background: red;
+  padding: 16px;
+  margin: 16px;
+  border: 2px solid black;
+}
+
+.target-with-blue {
+  background: blue !important;
+}
+
+.flex-container {
+  background: #fff;
+  height: 70vh;
+  padding: 16px;
+
+  display: flex;
+  gap: 24px;
+}
+
+.flex-item {
+  background: red;
+  padding: 8px;
+}
+
+.specific-item {
+  flex-grow: 1;
+}
+
+.flex-menu {
+  background: #999;
+}
+
+footer {
+  background: #444;
+  color: #fff;
+}
+
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-content {
+  flex-grow: 1;
+}
+
+.grid-container {
+  margin: 40px 0;
+  background: white;
+  padding: 16px;
+
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px; */
+  /* grid-template-columns: repeat(4, 100px); */
+  grid-template-columns: 1fr 2fr 1fr;
+
+  gap: 16px;
+}
+
+.grid-item {
+  background: hotpink;
+  padding: 8px;
+}
+
+.hero {
+  padding: 16px;
+  position: relative;
+
+  background-color: #f60;
+  background-image: url(https://place-hold.it/200x200/090);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  /* background-size: 50% 50%; */
+  /* background-size: contain; */
+  border-radius: 0 0 20px 20px;
+}
+
+.hero__nav {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+  /* background: #888; */
+}
+
+.hero__nav span {
+  flex-grow: 1;
+}
+
+.hero__content {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+
+.hero__title {
+  max-width: 50%;
+}
+
+@media (max-width: 300px) {
+  .hero__title {
+    font-size: 16px;
+  }
+}
+
+/* .hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+
+  z-index: -1;
+} */
