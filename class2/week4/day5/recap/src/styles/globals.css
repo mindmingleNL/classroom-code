@@ -1,0 +1,16 @@
+.card {
+  background-color: #efe;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card h1 {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
