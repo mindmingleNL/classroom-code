@@ -5,11 +5,13 @@ interface NewsCardProps {
 export const NewsCard = ({ title }: NewsCardProps) => {
   return (
     <div className="news-card">
-      <img
-        className="news-card__media"
-        src="https://picsum.photos/200/200"
-        alt=""
-      />
+      <div className="news-card__mask">
+        <img
+          className="news-card__media"
+          src="https://picsum.photos/200/200"
+          alt=""
+        />
+      </div>
       <h3 className="news-card__title">
         <a href="#">{title}</a>
       </h3>

@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +12,9 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .menu {
@@ -20,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .menu__logo {
@@ -44,7 +52,7 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: #555;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -68,9 +76,21 @@ body {
   display: block;
   width: 100%;
   height: 140px;
+  object-fit: cover;
+  /* filter: grayscale(1); */
+  /* transition: filter 0.4s; */
+  transition: transform 1s;
+}
+
+.news-card__mask {
+  overflow: hidden;
   margin-bottom: 8px;
   border-radius: 4px;
-  object-fit: cover;
+}
+
+.news-card:hover .news-card__media {
+  /* filter: grayscale(0); */
+  transform: scale(1.04);
 }
 
 .news-card__title {
@@ -80,13 +100,8 @@ body {
 
 .news-card__title a {
   text-decoration: none;
-  color: #000;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
-  /* background: rgba(255, 0, 0, 0.25); */
+  color: var(--text-color);
+  transition: color 0.4s;
 }
 
 .news-card__title a:after {
@@ -104,7 +119,7 @@ body {
 }
 
 .news-card__text {
-  color: #777;
+  color: var(--text-color);
 }
 
 .news-grid {
@@ -113,4 +128,64 @@ body {
   grid-template-columns: repeat(4, 1fr);
   max-width: 800px;
   margin: 86px auto;
+  padding: 0 16px;
+}
+
+@media (max-width: 800px) {
+  /* this css is only applied when the screen is smaller than 800px */
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu__main-items .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  .news-grid {
+    max-width: 1400px;
+  }
+
+  .news-card__media {
+    height: 300px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --text-color: #fff;
+    --bg-color: black;
+  } */
+
+  .menu {
+    box-shadow: none;
+    border-bottom: 1px solid #444;
+  }
+
+  /* body {
+    background: #000;
+    color: #fff;
+  }
+
+  .news-card__title a {
+    color: #fff;
+  }
+
+  .menu {
+    background: #000;
+    box-shadow: none;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu a {
+    color: #fff;
+  } */
 }

@@ -9,17 +9,20 @@ export default function Home() {
         </span>
 
         <ul className="menu__main-items">
+          <li className="hide-on-mobile">
+            <a href="#">Live</a>
+          </li>
           <li>
             <a href="#">Nieuws</a>
           </li>
           <li>
             <a href="#">Sport</a>
           </li>
-          <li>
-            <a href="#">Live</a>
-          </li>
-          <li>
+          <li className="hide-on-mobile">
             <a href="#">Programmas</a>
+          </li>
+          <li className="hide-on-mobile">
+            <a href="#">Kids News</a>
           </li>
         </ul>
 
