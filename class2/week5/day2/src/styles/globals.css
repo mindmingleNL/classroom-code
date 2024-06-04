@@ -26,6 +26,11 @@ body {
 .menu__logo {
   font-weight: bold;
   font-size: 32px;
+  color: #999;
+}
+
+.menu__logo span {
+  color: #c00;
 }
 
 .menu__main-items {
@@ -52,6 +57,7 @@ body {
   list-style-type: none;
   gap: 16px;
   font-size: 24px;
+  align-items: center;
 }
 
 .long-content {

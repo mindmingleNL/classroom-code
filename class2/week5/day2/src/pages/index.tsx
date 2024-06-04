@@ -2,7 +2,9 @@ export default function Home() {
   return (
     <>
       <nav className="menu">
-        <span className="menu__logo">NOS</span>
+        <span className="menu__logo">
+          N<span>O</span>S
+        </span>
 
         <ul className="menu__main-items">
           <li>
