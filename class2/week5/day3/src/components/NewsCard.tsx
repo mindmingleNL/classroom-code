@@ -1,8 +1,13 @@
+import { ReactNode } from "react";
+
 interface NewsCardProps {
   title: string;
+  // href: string;
+  content: string;
+  children?: ReactNode;
 }
 
-export const NewsCard = ({ title }: NewsCardProps) => {
+export const NewsCard = ({ title, content, children }: NewsCardProps) => {
   return (
     <div className="news-card">
       <div className="news-card__mask">
@@ -15,10 +20,11 @@ export const NewsCard = ({ title }: NewsCardProps) => {
       <h3 className="news-card__title">
         <a href="#">{title}</a>
       </h3>
-      <p className="news-card__text">
-        Qui voluptatem dolorem quibusdam. Sequi rem ipsam et occaecati debitis.
-        Blanditiis pariatur doloribus voluptatem itaque eius.
-      </p>
+
+      <div className={`news-card__text`}>
+        {content}
+        {children}
+      </div>
     </div>
   );
 };

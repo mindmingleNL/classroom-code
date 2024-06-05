@@ -24,6 +24,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 
   display: flex;
   justify-content: space-between;
@@ -188,4 +189,37 @@ body {
   .menu a {
     color: #fff;
   } */
+}
+
+.news-footer {
+  padding: 8px;
+  background: #ddd;
+}
+
+.article {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.button {
+  margin: 32px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: hotpink;
+  color: cyan;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 5px #000;
+  cursor: pointer;
+}
+
+.button--outlined {
+  background: #fff;
+  border: 1px solid hotpink;
+  color: purple;
+  box-shadow: none;
+}
+
+.button--tertiary {
+  background: purple;
 }
