@@ -213,13 +213,13 @@ body {
   cursor: pointer;
 }
 
-.button--outlined {
+.secondary {
   background: #fff;
   border: 1px solid hotpink;
   color: purple;
   box-shadow: none;
 }
 
-.button--tertiary {
+.tertiary {
   background: purple;
 }

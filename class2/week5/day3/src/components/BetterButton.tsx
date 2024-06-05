@@ -8,7 +8,7 @@ interface BetterButtonProps {
 export const BetterButton = ({ label, variant }: BetterButtonProps) => {
   const [clicked, setClicked] = useState(false);
 
-  // Setting the classname based on what is inside variant
+  // Setting the classname based on what is variant
   let className = "";
   if (variant === "secondary") {
     className = "button--outlined";

@@ -1,4 +1,3 @@
-import { Button } from "@/components/Button";
 import { Layout } from "@/components/Layout";
 import { NewsCard } from "@/components/NewsCard";
 
@@ -15,7 +14,6 @@ export default function Home() {
           content="Russian Spy"
         >
           <h4>Hello</h4>
-          <Button />
           <p>Hallo again</p>
         </NewsCard>
 
