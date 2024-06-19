@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box
+        position="-1 0.5 -3"
+        height="2"
+        width="4"
+        depth="0.4"
+        rotation="0 45 0"
+        color="#4CC3D9"
+      ></a-box>
+      <a-sphere
+        id="ball"
+        position="0 3.25 -5"
+        radius="1.25"
+        color="#EF2D5E"
+      ></a-sphere>
+      <a-cylinder
+        position="1 0.75 -3"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+      ></a-cylinder>
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="4"
+        height="4"
+        color="#7BC8A4"
+      ></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+
+    <script>
+      const ball = document.querySelector("#ball");
+
+      let count = 0;
+
+      // Make it move up once
+      //   const id = setInterval(() => {
+      //     // this will run often!
+      //     console.log("hi");
+      //     count += 0.01;
+      //     if (count >= 1) {
+      //       clearInterval(id);
+      //     }
+      //     ball.setAttribute("position", { x: 1, y: count, z: -3 });
+      //   }, 30);
+
+      // Make it bounce
+      setInterval(() => {
+        ball.setAttribute("position", {
+          x: 0,
+          y: Math.sin(Date.now() / 400) / 2,
+          z: -3,
+        });
+      }, 1000 / 60);
+    </script>
+  </body>
+</html>
