@@ -3,11 +3,6 @@ fileInput = open("./input.txt", "r")
 inputs = []
 
 for line in fileInput:
-    # 1-3 a: abcde
-    # ranges, check, password = line.strip().split(" ")
-    # minR, maxR = [int(range) for range in ranges.split("-")]
-    # check = check.replace(":", "")
-
     split1 = line.strip().split(": ")  # ['1-3 a', ' abcde']
     min_max = split1[0].split(" ")[0]
     min = int(min_max.split("-")[0])
@@ -16,4 +11,14 @@ for line in fileInput:
     password = split1[1]
     inputs.append({"min": min, "max": max, "check": check_letter, "password": password})
 
-print(inputs)
+# print(inputs)
+
+correct = 0
+for input in inputs:
+    fp = input["password"][input["min"] - 1] == input["check"]
+    sp = input["password"][input["max"] - 1] == input["check"]
+    if (fp and not sp) or (sp and not fp):
+        print(input["password"])
+        correct += 1
+
+print(correct)
