@@ -3,14 +3,24 @@ import { PrismaClient } from "@prisma/client";
 import cors from "cors";
 import { toData, toToken } from "./auth/jwt";
 import { AuthMiddleware, AuthRequest } from "./auth/middleware";
+import { compareSync, hashSync } from "bcrypt";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // DO NOT FORGET THIS, THIS IS HOW STUDENTS FAIL THE COURSE!!!!!!
 app.use(json());
 // You only need this when you talk to a frontend!
 app.use(cors());
 const prisma = new PrismaClient();
+
+app.get("/greeting", (req, res) => {
+  const messageFromEnv = process.env.MESSAGE;
+  res.send(messageFromEnv);
+});
 
 // PLANTS API //
 
@@ -201,7 +211,10 @@ app.post("/register", async (req, res) => {
   ) {
     try {
       const newUser = await prisma.users.create({
-        data: bodyFromRequest,
+        data: {
+          ...bodyFromRequest,
+          password: hashSync(bodyFromRequest.password, 10),
+        },
         select: {
           id: true,
           username: true,
@@ -233,7 +246,7 @@ app.post("/login", async (req, res) => {
       res.send({ message: "Username and password combination not found" });
       return;
     }
-    if (userToLogin.password !== bodyFromRequest.password) {
+    if (!compareSync(bodyFromRequest.password, userToLogin.password)) {
       res.send({ message: "Username and password combination not found" });
       return;
     }

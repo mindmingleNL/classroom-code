@@ -5,8 +5,7 @@ interface TokenInfo extends JwtPayload {
   userId: number;
 }
 
-const SECRET =
-  process.env.SECRET || "DJQW)IJ)D@#OPIQ#UDOPIJFDPWJFIFEJOFEIHFLVBN";
+const SECRET = process.env.SECRET || "blueberrypie";
 
 export const toToken = (data: TokenInfo): string => {
   const token = jwt.sign(data, SECRET);

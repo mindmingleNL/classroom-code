@@ -1,6 +1,10 @@
+import { hashSync } from "bcrypt";
 import plantsData from "./seeddata/plants.json";
 import usersData from "./seeddata/users.json";
 import { PrismaClient } from "@prisma/client";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const prisma = new PrismaClient();
 
@@ -10,7 +14,7 @@ const seed = async () => {
   for (let i = 0; i < usersData.length; i++) {
     const thisUser = usersData[i];
     await prisma.users.create({
-      data: thisUser,
+      data: { ...thisUser, password: hashSync(thisUser.password, 10) },
     });
   }
 

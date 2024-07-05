@@ -32,7 +32,9 @@ export default function Home() {
             quia maiores.
           </p>
           <div className="flex gap-2">
-            <p className={`text-3xl text-green-700 ${playfair.className}`}>
+            <p
+              className={`text-3xl text-green-700 ${playfair.className}  animate-bounce`}
+            >
               €149.99
             </p>
             <p className="line-through text-slate-500 text-sm">€169.99</p>
